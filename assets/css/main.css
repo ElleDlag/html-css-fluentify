@@ -1,3 +1,31 @@
-body{
-  background: #B57BA8
+/* reset */
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
 }
+a{
+  text-decoration: none;
+  color:black;
+}
+ul,li{
+  list-style-type: none;
+}
+
+/* standard and basic */
+
+body{
+  background: #0E325A
+}
+body, section{
+  width:100%;
+}
+section, footer, header{
+  padding:0% 15%;
+}
+
+/*only for test */
+body>*>*{
+  border:1px solid #fff
+}
+/*end*/
