@@ -15,17 +15,74 @@ ul,li{
 /* standard and basic */
 
 body{
-  background: #0E325A
+  background: #0E325A;
+  font-family: 'Raleway', sans-serif;
+  position:relative;
 }
-body, section{
+body, section,footer,header{
   width:100%;
 }
-section, footer, header{
+body>*{
+  border:1px solid yellow;
   padding:0% 15%;
 }
-
 /*only for test */
 body>*>*{
-  border:1px solid #fff
+  border:1px solid white;
 }
 /*end*/
+.wrapper{
+  margin-top:80px;
+  border:1px solid red;
+}
+.clearfix{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+header{
+  color:white;
+  width:100%;
+  position:fixed;
+  top:0;
+  font-size: 11px;
+}
+
+
+header nav,
+header nav ul,
+header nav li{
+  float:left;
+  height: 80px;
+}
+
+header li{
+  position: relative;
+  padding:0 10px;
+}
+
+header li a{
+  display: block;
+  position: relative;
+  top:50%;
+  transform: translateY(-50%);
+  color:#fff;
+}
+header li a:hover{
+  color:#F8B71C
+}
+
+header .login{
+  float:right;
+  height: 80px;
+}
+
+header li:first-child a
+{
+  padding:0 2.3vw
+}
+
+.wrapper>*{
+  height:200px;
+}
