@@ -52,7 +52,9 @@ header{
 
 header nav,
 header nav ul,
-header nav li{
+header nav li,
+header div>*
+{
   float:left;
   height: 80px;
 }
@@ -62,7 +64,8 @@ header li{
   padding:0 10px;
 }
 
-header li a{
+header li a,
+header div>*{
   display: block;
   position: relative;
   top:50%;
@@ -82,6 +85,32 @@ header li:first-child a
 {
   padding:0 2.3vw
 }
+
+header div>*{
+  height:auto;
+  padding:0 10px;
+}
+header div>label{
+  color: rgba(255, 255, 255, 0.5);
+}
+header div>*:not(:first-child){
+  height:30px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+header div #logBtn{
+  background: #0E325A;
+  border:1px solid #4e8cb6;
+  padding:0 30px;
+  margin:0 10px;
+}
+header div #planBtn{
+  background:#7fb802;
+  border:none;
+}
+
+
+
 
 .wrapper>*{
   height:200px;
