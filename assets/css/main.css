@@ -44,6 +44,10 @@ p{
   float:left;
   color:white;
 }
+.col_3{
+  text-align: center;
+  background: #fff;
+}
 .clearfix:after{
   content: '';
   display: table;
@@ -56,6 +60,18 @@ p{
   color: #fff;
   border:none;
   border-radius: 5px;
+}
+
+.hrSection{
+  height:20px;
+  background:#fff;
+  padding:0;
+  text-align:center;
+}
+.hrSection hr{
+  margin:auto;
+  border:1px solid #ddd;
+  width:98%;
 }
 
 /*only for test */
@@ -195,7 +211,8 @@ header div #logBtn{
   margin-bottom: 8px;
 }
 .col_1.faq h3{
-  color:#999999;
+  color:#fff;
+  opacity: .6;
   font-weight:400;
   margin-bottom: 8px;
 }
@@ -355,9 +372,90 @@ header div #logBtn{
 
 /* COLUMN 3 */
 
-.col_3.selectPlan{
-  background: #fff;
+.col_3.selectPlan .content{
+  border:1px solid white;
+  padding: 80px 11vw 30px 15vw;
 }
+.col_3.selectPlan .content h2{
+  opacity: .8
+}
+
+.col_3.selectPlan .content img.icoCol_3{
+
+  height:37px;
+  display:block;
+  vertical-align: top;
+}
+.col_3.selectPlan .content ul,
+.col_3.selectPlan .content li{
+  float:left;
+  text-align:left;
+  padding:0 15px 50px;
+  color: #999
+}
+.col_3.selectPlan .content ul{
+  padding: 50px 10px;
+}
+.col_3.selectPlan .content li{
+  width:33.333%;
+  padding-bottom: 50px;
+}
+.col_3.selectPlan .content li h4{
+  color:#000;
+  font-size: 18px;
+  margin-top:30px;
+  opacity: .6;
+}
+.col_3.selectPlan .content li p{
+  font-size: 15px;
+  padding:15px 0;
+  border-bottom:5px solid #98c8f8;
+}
+.col_3.selectPlan .content li:nth-child(2) p{border-color: #f8b71c}
+.col_3.selectPlan .content li:nth-child(2) a{color: #f8b71c !important}
+.col_3.selectPlan .content li:nth-child(3) p{border-color: #7fb802}
+.col_3.selectPlan .content li:nth-child(3) a{color: #7fb802 !important}
+
+.col_3 .content li a{
+display: block;
+}
+
+
+.col_3.overView .content{
+  padding:20px 60px;
+}
+.col_3.overView .content ul .imgContent{
+  height:240px;
+}
+.col_3.overView .content ul img{
+  height:155px;
+}
+.col_3.overView .content ul,
+.col_3.overView .content li{
+  float:left;
+}
+.col_3.overView .content li{
+  width:33.333%;
+  padding:0 15px;
+}
+.col_3.overView .content li h6{
+  font-size:23px;
+  color:#7fb802;
+}
+.col_3.overView .content li p{
+  font-size:15px;
+  color:#999;
+  padding:0 25px;
+  line-height: 25px;
+}
+.col_3.overView .content li .hrOW{
+  margin:15px auto;
+  width:30px;
+  border:1px solid #999;
+  opacity:.3;
+
+}
+
 
 
 
