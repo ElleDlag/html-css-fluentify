@@ -487,10 +487,16 @@ footer .content li{
 }
 
 footer .content>.block_1 li:first-child{padding-top:0}
+footer .content>.block_1 li a{
+  text-decoration: none;
+  color:#fff !important;
+  opacity:.5
+}
 footer .content>.block_1 li:first-child a{
   font-size: 12px;
-  color:#fff
+  color:#fff !important;
 }
+
 
 footer .content>.block_2{
   width:33%;
@@ -510,6 +516,9 @@ footer .content>.block_2 li:not(:last-child){
   font-size: 18px;
   color: white;
 }
+
+
+
 .greenBtn.help{
   position: fixed;
   bottom:0;
