@@ -5,8 +5,7 @@
   box-sizing: border-box;
 }
 a{
-  text-decoration: none;
-  color:black;
+  color:#98c8f8 !important;
 }
 ul,li{
   list-style-type: none;
@@ -23,23 +22,50 @@ body, section,footer,header{
   width:100%;
 }
 body>*{
-  border:1px solid yellow;
-  padding:0% 15%;
+  /* border:1px solid yellow; */
+  padding:0% 12%;
 }
-/*only for test */
-body>*>*{
-  border:1px solid white;
+
+
+.col_2 .content{
+  width:100%;
+  float:left;
 }
-/*end*/
-.wrapper{
-  margin-top:80px;
-  border:1px solid red;
+.col_2 .content>*{
+  width:50%;
+  float:left;
+  color:white;
 }
-.clearfix{
+.clearfix:after{
   content: '';
   display: table;
   clear: both;
 }
+.marker{color:#7fb802}
+.marker2{color:#ec971f}
+.greenBtn{
+  background:#7fb802;
+  color: #fff;
+  border:none;
+  border-radius: 5px;
+}
+/*only for test */
+/* .wrapper>*{
+  height:500px;
+} */
+/* body>*>*{
+  border:1px solid white;
+}
+.content{border: 3px solid green;}
+.content>*{border: 1px solid red;}
+.wrapper{
+  border:1px solid red;
+} */
+/*end*/
+
+
+
+/* HEADER */
 
 header{
   color:white;
@@ -47,6 +73,8 @@ header{
   position:fixed;
   top:0;
   font-size: 11px;
+  background: #0E325A;
+
 }
 
 
@@ -59,6 +87,8 @@ header div>*
   height: 80px;
 }
 
+header nav{padding-left: 7vw}
+header .login{padding-right: 7vw}
 header li{
   position: relative;
   padding:0 10px;
@@ -72,20 +102,18 @@ header div>*{
   transform: translateY(-50%);
   color:#fff;
 }
+header li a{
+  color:white !important;
+  text-decoration: none;
+}
 header li a:hover{
-  color:#F8B71C
+  color:#F8B71C !important
 }
 
 header .login{
   float:right;
   height: 80px;
 }
-
-header li:first-child a
-{
-  padding:0 2.3vw
-}
-
 header div>*{
   height:auto;
   padding:0 10px;
@@ -104,14 +132,205 @@ header div #logBtn{
   padding:0 30px;
   margin:0 10px;
 }
-header div #planBtn{
-  background:#7fb802;
+
+
+
+
+/* COLUMN 1 CONTENT MAINCAPTION-HOWTO-FAQ*/
+.col_1:not(.faq){
+    text-align: center;
+    height:auto;
+}
+.col_1.mainCaption,
+.col_1.faq{
+  padding:30px 0 40px;
+}
+.col_1.mainCaption{
+  background: #f9f9f9;
+}
+.col_1.mainCaption h2,
+.col_1.mainCaption h3{
+  font-weight:400;
+  margin:8px 0
+}
+.col_1.mainCaption h3{
+  color:#999999
+}
+
+.col_1.howTo{
+  padding:45px 33.8vw 75px;
+  background: #fff;
+}
+.col_1.howTo>*{
+  margin: auto;
+}
+.col_1 .howToText{
+  margin-top: 20px;
+}
+.col_1 .howToText>*{
+  margin-bottom: 8px;
+}
+.col_1 .howToText>*:not(:first-child){
+  font-weight:400;
+  color:#999999;
+}
+.col_1 .howToText a{
+  text-decoration: underline;
+}
+
+.col_1.faq{
+  padding-left: 5.5vw;
+  padding-right: 5.5vw;
+  height: auto;} /*provvisorio*/
+.col_1.faq h2{
+  color:white;
+  margin-bottom: 8px;
+}
+.col_1.faq h3{
+  color:#999999;
+  font-weight:400;
+  margin-bottom: 8px;
+}
+/* END COL1 */
+
+
+/* COLUMN 2 */
+.col_2.mainHeader{
+  padding:15vh 18vw 12vh;
+  margin-top: 80px;
+  /* border:3px solid red; */
+  background: url("../img/oldman.png") no-repeat;
+  background-position:bottom right;
+  background-size: 52%;
+}
+
+.col_2.mainHeader h1{
+  font-size:42px;
+  margin-bottom:8px;
+}
+.col_2.mainHeader button{
+  padding:13px 10px;
+  margin:30px 0 8px;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+
+
+.col_2.testUself{
+  background-color: #fff;
+  padding-top:40px;
+  padding-bottom:40px;;
+}
+.col_2.testUself .content .block_1 img{
+  width:58%;
+  margin-left: 9.3vw
+}
+.col_2.testUself .content .block_2{
+  color: #4a4a4a;
+  padding:8.7vh 8.3vw 8.7vh 4.8vw
+}
+.col_2.testUself .content .block_2 h2{
+  line-height: 45px;
+  font-size: 30px;
+}
+.col_2.testUself .content .block_2 p{
+  margin:16px 0;
+  color: #999;
+}
+
+
+.col_2.tryUplan{
+  background:#f9f9f9;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.col_2.tryUplan .content .block_1{
+  padding-left: 7vw;
+  color:#4a4a4a;
+}
+.col_2.tryUplan .content .block_1 h2{
+  font-size: 30px;
+  line-height: 30px;
+  padding:10px;
+}
+
+.col_2.tryUplan .content .block_2{
+  padding: 4px;
+}
+.col_2.tryUplan .content .block_2>*{
+  display: inline-block;
+  float: left;
+  height:42px;
+}
+
+.col_2.tryUplan .content .block_2 form>*{
+  color: #999;
+  font-size: 30px;
+  padding:10px;
+}
+.col_2.tryUplan .content .block_2 form>select{
+  border-radius:0px;
   border:none;
+  border-bottom: 3px solid #999;
+  color:#4a4a4a;
+  width:350px
+}
+.col_2.tryUplan .content .block_2>button{
+  width:220px;
+  font-size: 17px;
+  margin-left: 10px;
 }
 
 
 
 
-.wrapper>*{
-  height:200px;
+
+
+/* FOOTER */
+footer{
+  font-size: 16px;
+  background:#18406B
+}
+footer a{
+  color:rgba(255, 255, 255, 0.5);
+}
+
+footer .content{
+  padding:6.5vh 7vw;
+}
+
+footer .content>*{
+  float: left;
+  width:50%;
+  padding:0 8px 8px;
+}
+footer .content li{
+  padding:8px;
+  line-height: 1.5;
+}
+
+footer .content>.block_1 li:first-child{padding-top:0}
+footer .content>.block_1 li:first-child a{
+  font-size: 12px;
+  color:#fff
+}
+
+footer .content>.block_2{
+  width:33%;
+  text-align: right;
+  color:rgba(255, 255, 255, 0.5);
+}
+footer .content>.block_2>ul{
+  float: right;
+  width:100%;
+}
+footer .content>.block_2 li{
+  margin-bottom: 20px;
+}
+
+footer .content>.block_2 li:not(:last-child){
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
 }

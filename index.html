@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <title>Fluentify rebuild</title>
     <link rel="stylesheet" href="assets/css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600&display=swap" rel="stylesheet">
   </head>
   <body>
-    <!-- 12 div
+    <!-- 13 div
     01 fixed <nav>
     02 <header>
     03 main caption
@@ -19,70 +19,100 @@
     09 how to
     10 for company
     11 select your plans
-    12 footer  -->
+    12 faq
+    13 footer  -->
 
     <!-- HEADER -->
     <header class="clearfix">
-      <nav class="clearfix">
-        <ul class="clearfix">
-          <li id="this"><a href="#"><img src="assets/img/LogoFluentify.svg" alt=""></a></li>
-          <li><a href="#">IL METODO</a></li>
-          <li><a href="#">LA TECNOLOGIA</a></li>
-          <li><a href="#">REAL-LIFE ENGLISH</a></li>
-          <li><a href="#">SOLUZIONI AZIENDALI</a></li>
-        </ul>
-      </nav>
-      <div class="login">
-        <label for="logBtn">DIVENTA UN TUTOR</label>
-        <button id="logBtn">LOGIN</button>
-        <button id="planBtn">STURTTURA UN PIANO</button>
-      </div>
+        <nav>
+          <ul class="clearfix">
+            <li id="this"><a href="#"><img src="assets/img/LogoFluentify.svg" alt=""></a></li>
+            <li><a href="#">IL METODO</a></li>
+            <li><a href="#">LA TECNOLOGIA</a></li>
+            <li><a href="#">REAL-LIFE ENGLISH</a></li>
+            <li><a href="#">SOLUZIONI AZIENDALI</a></li>
+          </ul>
+        </nav>
+        <div class="login">
+          <label for="logBtn">DIVENTA UN TUTOR</label>
+          <button id="logBtn">LOGIN</button>
+          <button class="greenBtn">STURTTURA UN PIANO</button>
+        </div>
     </header>
+    <!-- MAIN HEADER -->
+    <section class="col_2 mainHeader clearfix">
+      <div class="content clearfix">
+        <div>
+          <h1>Scegli l'inglese studiato per i professionisti</h1>
+          <button class="greenBtn">STRUTTURA UN PIANO</button>
+        </div>
+      </div>
+    </section>
 
-    <div class="wrapper">
+<!-- START CONTENT -->
       <!-- MAIN CAPTION -->
-      <section class="mainCaption">
+      <section class="col_1 mainCaption">
         <div class="content">
-          <h1>La scuola bla bla bla</h1>
-          <h2>solo un corso bla bla bla</h2>
+          <h2>Le scuole di lingua tradizionali non sono efficaci</h2>
+          <h3>Solo un corso incentrato sulla Fluency può portare ad una soluzione definitiva concreta.</h3>
         </div>
       </section>
 
       <!-- SECTION col_3 typeA overview-->
       <section class="col_3">
         <div class="content">
-          <div class="block_1">BLOCCO1</div>
-          <div class="block_2">BLOCCO2</div>
-          <div class="block_3">BLOCCO3</div>
+          <div class="block_1">OVERVIEW</div>
+          <div class="block_2">OVERVIEW</div>
+          <div class="block_3">OVERVIEW</div>
         </div>
       </section>
 
-      <!-- SECTION col_2 typeA test yourself-->
-      <section class="col_2">
+      <!-- SECTION col_2 typeA test yourself XX-->
+      <section class="col_2 testUself clearfix">
+        <div class="content">
+          <div class="block_1">
+            <img src="assets/img/mountain.svg" alt="">
+          </div>
+          <div class="block_2">
+            <h2>Scopri il tuo livello iniziale e struttura un piano personalizzato</h2>
+            <p>L'esperienza Fluentify parte sempre da un test di placement per avere una chiara visione del tuo inglese, ad oggi.</p>
+            <a href="#">Scopri il nostro test di placement</a>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION select your milestones -->
+      <section class="col_2 tryUplan clearfix">
+        <div class="content">
+          <div class="block_1">
+            <h2>Struttura un piano</h2>
+          </div>
+          <div class="block_2">
+            <form action="">
+              <label for="select">Sono</label>
+                <select id="select" class="" name="">
+                  <option value="">Seleziona</option>
+                  <option value="">Uno studente</option>
+                  <option value="">Un professionista</option>
+                  <option value="">Un'azienda</option>
+                </select>
+            </form>
+            <button class="greenBtn">Visualizza il tuo piano</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION col_2 typeA our lessons  XX-->
+      <section class="col_2 clearfix">
         <div class="content">
           <div class="block_1">BLOCCO1</div>
           <div class="block_2">BLOCCO2</div>
         </div>
       </section>
 
-      <!-- SECTION col_2 typeA select your milestones -->
-      <section class="col_2">
-        <div class="content">
-          <div class="block_1">BLOCCO1</div>
-          <div class="block_2">BLOCCO2</div>
-        </div>
-      </section>
-
-      <!-- SECTION col_2 typeA our lessons -->
-      <section class="col_2">
-        <div class="content">
-          <div class="block_1">BLOCCO1</div>
-          <div class="block_2">BLOCCO2</div>
-        </div>
-      </section>
-
-      <!-- SECTION col_2 typeA only target -->
-      <section class="col_2">
+      <!-- SECTION only target -->
+      <section class="">
         <div class="content">
           <div class="block_1">BLOCCO1</div>
           <div class="block_2">BLOCCO2</div>
@@ -90,15 +120,20 @@
       </section>
 
       <!-- SECTION col1  how to -->
-      <section>
+      <section class="col_1 howTo">
         <div class="content">
-          <img src="" alt="">
-          <div>BLOCCO1</div>
+          <img src="assets/img/set.svg" alt="devices">
+          <div class="howToText">
+            <h2>Ci trovi su Pc, Mobile e Tablet, <span class="marker">24/7</span>.</h2>
+            <h5>Tutor da tutto il mondo disponibili 24 ore al giorno 7 giorni su 7, anche nei weekend.</h5>
+            <h3>Tutto direttamente sul tuo pc grazie alla videoconferenza integrata nella piattaforma e sui dispositivi mobile con la app dedicata.</h3>
+            <a href="">Come funziona</a>
+          </div>
         </div>
       </section>
 
-      <!-- SECTION col_2 typeA for company -->
-      <section class="col_2">
+      <!-- SECTION col_2 typeA for company XX-->
+      <section class="col_2 clearfix">
         <div class="content">
           <div class="block_1">BLOCCO1</div>
           <div class="block_2">BLOCCO2</div>
@@ -113,14 +148,44 @@
           <div class="block_3">BLOCCO3</div>
         </div>
       </section>
-    </div>
+
+      <!-- SECTION faq -->
+      <section class="col_1 faq">
+        <div class="content">
+          <div>
+            <h2>Dubbi? Consulta le nostre <span class="marker2">FAQs</span></h2>
+            <h3>Oppure contattaci via e-mail o su facebook<h3>
+          </div>
+        </div>
+      </section>
+
+<!-- END CONTENT -->
+
 
 
     <!-- FOOTER col_2 typeB footer-->
-    <footer class="col_3">
-      <div class="content">
-        <div class="block_1">BLOCCO1</div>
-        <div class="block_2">BLOCCO2</div>
+    <footer class="">
+      <div class="content clearfix">
+        <div class="block_1">
+          <ul>
+            <li><a href="#">Azienda</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Contattaci</a></li>
+            <li><a href="#">Cookie Settings</a></li>
+          </ul>
+        </div>
+        <div class="block_2">
+          <ul>
+            <li>FLUENTIFY © 2019</li>
+            <li>Designed and built in London & Torino</li>
+            <li>Fluentify UK Ltd <br>
+Company's registered number: 8423300<br>
+Telephone: +44 (0) 20 8133 8469</li>
+          </ul>
+        </div>
       </div>
     </footer>
 
