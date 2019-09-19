@@ -290,7 +290,8 @@ header div #logBtn{
 /* FOOTER */
 footer{
   font-size: 16px;
-  background:#18406B
+  background:#18406B;
+  position:relative;
 }
 footer a{
   color:rgba(255, 255, 255, 0.5);
@@ -333,4 +334,13 @@ footer .content>.block_2 li:not(:last-child){
   font-weight: 600;
   font-size: 18px;
   color: white;
+}
+.greenBtn.help{
+  position: fixed;
+  bottom:0;
+  right:10%;
+  padding:15px;
+  font-size:13px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
