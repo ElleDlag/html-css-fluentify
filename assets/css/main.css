@@ -6,6 +6,7 @@
 }
 a{
   color:#98c8f8 !important;
+  cursor: pointer;
 }
 ul,li{
   list-style-type: none;
@@ -60,6 +61,7 @@ p{
   color: #fff;
   border:none;
   border-radius: 5px;
+  cursor:pointer
 }
 
 .hrSection{
